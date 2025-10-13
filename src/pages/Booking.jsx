@@ -1,6 +1,14 @@
 import { useState } from "react";
-import "./Booking.css";
+import {
+  PageContainer,
+  HeroSection,
+  ContentSection,
+  SectionIntro,
+  Card,
+  Button,
+} from "../components/common";
 import practitioners from "../data/practitionersData";
+import "./Booking.css";
 
 function Booking() {
   const [formData, setFormData] = useState({
@@ -56,147 +64,145 @@ function Booking() {
   };
 
   return (
-    <div className="booking-page">
+    <PageContainer className="booking-page">
       {/* Hero Section */}
-      <section className="booking-hero">
-        <div className="hero-content">
-          <h1>Book Your Appointment</h1>
-          <p className="subtitle">Take the first step towards wellness</p>
-        </div>
-      </section>
+      <HeroSection
+        title="Book Your Appointment"
+        subtitle="Take the first step towards wellness"
+      />
 
       {/* Main Content */}
-      <section className="booking-content">
-        <div className="container">
-          <div className="intro-section fade-in">
-            <h2>What to Expect</h2>
-            <p>
+      <ContentSection maxWidth="default">
+        <SectionIntro
+          title="What to Expect"
+          description={
+            <>
               Your first <strong>Spinal Flow session</strong> is a gentle and
               transformative experience. Select your practitioner, choose an
-              available date, and we’ll take care of the rest.
-            </p>
-          </div>
+              available date, and we'll take care of the rest.
+            </>
+          }
+        />
 
-          <div className="booking-form-container fade-in">
-            <h2>Book Your Session</h2>
+        <Card className="booking-form-container fade-in" hover={false}>
+          <h2 className="form-title">Book Your Session</h2>
 
-            {submitted ? (
-              <div className="success-message">
-                <h3>Thank you for your booking!</h3>
-                <p>We'll contact you soon to confirm your appointment.</p>
+          {submitted ? (
+            <div className="success-message">
+              <h3>Thank you for your booking!</h3>
+              <p>We'll contact you soon to confirm your appointment.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="booking-form">
+              <div className="form-group">
+                <label>Full Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="booking-form">
-                <div className="form-group">
-                  <label>Full Name *</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
 
-                <div className="form-group">
-                  <label>Email Address *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+              <div className="form-group">
+                <label>Email Address *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-                <div className="form-group">
-                  <label>Phone Number *</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
+              <div className="form-group">
+                <label>Phone Number *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-                <div className="form-group">
-                  <label>Preferred Practitioner</label>
-                  <select
-                    name="practitioner"
-                    value={formData.practitioner}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select Practitioner</option>
-                    {practitioners.map((p) => (
-                      <option key={p.id} value={p.id}>
-                        {p.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+              <div className="form-group">
+                <label>Preferred Practitioner</label>
+                <select
+                  name="practitioner"
+                  value={formData.practitioner}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select Practitioner</option>
+                  {practitioners.map((p) => (
+                    <option key={p.id} value={p.id}>
+                      {p.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-                {selectedPractitioner && (
-                  <>
-                    <div className="form-row">
-                      <div className="form-group">
-                        <label>Available Dates *</label>
-                        <select
-                          name="date"
-                          value={formData.date}
-                          onChange={handleChange}
-                          required
-                        >
-                          <option value="">Select Date</option>
-                          {selectedPractitioner.availableDates.map((d, i) => (
-                            <option key={i} value={d}>
-                              {d}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div className="form-group">
-                        <label>Available Times *</label>
-                        <select
-                          name="time"
-                          value={formData.time}
-                          onChange={handleChange}
-                          required
-                        >
-                          <option value="">Select Time</option>
-                          {selectedPractitioner.availableTimes.map((t, i) => (
-                            <option key={i} value={t}>
-                              {t}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
+              {selectedPractitioner && (
+                <>
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label>Available Dates *</label>
+                      <select
+                        name="date"
+                        value={formData.date}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="">Select Date</option>
+                        {selectedPractitioner.availableDates?.map((d, i) => (
+                          <option key={i} value={d}>
+                            {d}
+                          </option>
+                        ))}
+                      </select>
                     </div>
-                  </>
-                )}
 
-                <div className="form-group">
-                  <label>Additional Notes (Optional)</label>
-                  <textarea
-                    name="message"
-                    rows="4"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Let us know if you have any specific concerns or preferences..."
-                  ></textarea>
-                </div>
+                    <div className="form-group">
+                      <label>Available Times *</label>
+                      <select
+                        name="time"
+                        value={formData.time}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="">Select Time</option>
+                        {selectedPractitioner.availableTimes?.map((t, i) => (
+                          <option key={i} value={t}>
+                            {t}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </>
+              )}
 
-                <button type="submit" className="btn-primary">
-                  Submit Booking Request
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
-      </section>
-    </div>
+              <div className="form-group">
+                <label>Additional Notes (Optional)</label>
+                <textarea
+                  name="message"
+                  rows="4"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Let us know if you have any specific concerns or preferences..."
+                ></textarea>
+              </div>
+
+              <Button type="submit" variant="gradient" className="submit-button">
+                Submit Booking Request
+              </Button>
+            </form>
+          )}
+        </Card>
+      </ContentSection>
+    </PageContainer>
   );
 }
 

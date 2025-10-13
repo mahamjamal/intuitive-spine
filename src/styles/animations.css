@@ -1,0 +1,25 @@
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp var(--transition-slower) ease forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

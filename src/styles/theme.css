@@ -1,0 +1,85 @@
+/* ============================================
+   Global Theme Variables
+   ============================================ */
+
+:root {
+  /* Colors */
+  --color-primary: #0ea5e9;
+  --color-primary-dark: #0369a1;
+  --color-secondary: #f97316;
+  --color-text-primary: #1e1e1e;
+  --color-text-secondary: #475569;
+  --color-text-tertiary: #64748b;
+  --color-bg-primary: #f9fafb;
+  --color-bg-secondary: #ffffff;
+  --color-bg-light: #f8fafc;
+  
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #0ea5e9 0%, #0369a1 50%, #f97316 100%);
+  --gradient-text: linear-gradient(90deg, #0ea5e9, #f97316);
+  --gradient-button: linear-gradient(90deg, #0ea5e9, #f97316);
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+  --font-size-xs: 0.95rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.05rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.4rem;
+  --font-size-3xl: 1.8rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.2rem;
+  --font-size-6xl: 3rem;
+  --font-size-7xl: 3.2rem;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.6;
+  --line-height-normal: 1.7;
+  --line-height-relaxed: 1.75;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 2.5rem;
+  --spacing-3xl: 3rem;
+  --spacing-4xl: 4rem;
+  --spacing-5xl: 5rem;
+  --spacing-6xl: 6rem;
+  --spacing-8xl: 8rem;
+  --spacing-10xl: 10rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 1.75rem;
+  --radius-2xl: 3rem;
+  --radius-full: 999px;
+  
+  /* Shadows */
+  --shadow-xs: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-2xl: 0 14px 40px rgba(0, 0, 0, 0.12);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.35s ease;
+  --transition-slower: 0.8s ease;
+  
+  /* Container */
+  --container-max-width: 1200px;
+  --container-padding: 1.5rem;
+}
