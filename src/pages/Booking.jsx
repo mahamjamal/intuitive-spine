@@ -84,7 +84,7 @@ function Booking() {
           }
         />
 
-        <Card className="booking-form-container fade-in" hover={false}>
+        <Card className="booking-form-container" hover={false}>
           <h2 className="form-title">Book Your Session</h2>
 
           {submitted ? (

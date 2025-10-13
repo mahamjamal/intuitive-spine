@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .practitioner-card:hover {
@@ -88,9 +89,9 @@
   background-clip: text;
 }
 
-.cta-section p {
-  color: #475569;
-  margin-bottom: 1.5rem;
+.practitioners-page .cta-section p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
 }
 
 .btn-primary {
@@ -109,9 +110,20 @@
 
 /* Fade Animation */
 .fade-in {
-  opacity: 0;
+  opacity: 100;
   transform: translateY(15px);
   animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .intro-section.fade-in {
@@ -126,9 +138,6 @@
 }
 .practitioners-grid .fade-in:nth-child(3) {
   animation-delay: 0.3s;
-.practitioners-page .cta-section p {
-  color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-lg);
 }
 .practitioners-grid .fade-in:nth-child(4) {
   animation-delay: 0.4s;

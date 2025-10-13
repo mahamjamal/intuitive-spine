@@ -30,37 +30,12 @@ function Practitioners() {
               of the nervous system with a compassionate, intuitive approach.
               Each member of our team is dedicated to helping you unlock your
               body’s natural healing potential.
-            </p>
-          </div>
-
-          <div className="practitioners-grid">
-            {practitioners.map((practitioner) => (
-              <div key={practitioner.id} className="practitioner-card fade-in">
-                <div className="practitioner-avatar">
-                  {practitioner.image ? (
-                    <img
-                      src={practitioner.image}
-                      alt={practitioner.name}
-                      className="practitioner-img"
-                    />
-                  ) : (
-                    <span className="initials">
-                      {practitioner.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </span>
-                  )}
-                </div>
-              <strong>Spinal Flow Technique</strong>, combining deep knowledge of
-              the nervous system with a compassionate, intuitive approach. Each
-              member of our team is dedicated to helping you unlock your body's
-              natural healing potential.
             </>
           }
         />
 
-        <GridLayout columns={4} gap="medium" className="fade-in">
+        {/* Practitioners Grid */}
+        <GridLayout columns={4} gap="medium">
           {practitioners.map((practitioner) => (
             <Card key={practitioner.id} className="practitioner-card">
               <div className="practitioner-avatar">
@@ -93,7 +68,8 @@ function Practitioners() {
           ))}
         </GridLayout>
 
-        <div className="cta-section fade-in">
+        {/* Call To Action Section */}
+        <div className="cta-section">
           <h2>Begin Your Healing Journey</h2>
           <p>Book a session with one of our experienced practitioners today.</p>
           <Button href="/booking" variant="gradient">

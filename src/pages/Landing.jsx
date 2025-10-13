@@ -54,7 +54,7 @@ function Landing() {
         <SectionIntro title="Why Choose Intuitive Spine?" />
         <GridLayout columns={3} gap="medium">
           {features.map((item, index) => (
-            <Card key={index} className="feature-card fade-in">
+            <Card key={index} className="feature-card">
               <div className="feature-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>

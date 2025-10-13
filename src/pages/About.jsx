@@ -37,7 +37,7 @@ function About() {
 
       {/* Content Section */}
       <ContentSection maxWidth="default">
-        <div className="about-section fade-in">
+        <div className="about-section">
           <h2>Our Mission</h2>
           <p>
             At <strong>Intuitive Spine</strong>, we believe in the body's innate
@@ -48,7 +48,7 @@ function About() {
           </p>
         </div>
 
-        <div className="about-section fade-in">
+        <div className="about-section">
           <h2>What is Spinal Flow?</h2>
           <p>
             Spinal Flow is a holistic healing modality that works with the body's
@@ -66,7 +66,7 @@ function About() {
           </ul>
         </div>
 
-        <div className="about-section fade-in">
+        <div className="about-section">
           <h2>Our Approach</h2>
           <p>
             We take a personalized approach to each client, recognizing that
@@ -81,7 +81,7 @@ function About() {
           </p>
         </div>
 
-        <div className="about-section fade-in">
+        <div className="about-section">
           <h2>Why Choose Us?</h2>
           <GridLayout columns={2} gap="medium" className="values-grid">
             {values.map((item, index) => (
