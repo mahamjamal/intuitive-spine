@@ -26,6 +26,32 @@ function Practitioners() {
           description={
             <>
               Our practitioners are highly trained in the{" "}
+              <strong>Spinal Flow Technique</strong>, combining deep knowledge
+              of the nervous system with a compassionate, intuitive approach.
+              Each member of our team is dedicated to helping you unlock your
+              body’s natural healing potential.
+            </p>
+          </div>
+
+          <div className="practitioners-grid">
+            {practitioners.map((practitioner) => (
+              <div key={practitioner.id} className="practitioner-card fade-in">
+                <div className="practitioner-avatar">
+                  {practitioner.image ? (
+                    <img
+                      src={practitioner.image}
+                      alt={practitioner.name}
+                      className="practitioner-img"
+                    />
+                  ) : (
+                    <span className="initials">
+                      {practitioner.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  )}
+                </div>
               <strong>Spinal Flow Technique</strong>, combining deep knowledge of
               the nervous system with a compassionate, intuitive approach. Each
               member of our team is dedicated to helping you unlock your body's
