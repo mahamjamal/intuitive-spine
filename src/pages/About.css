@@ -54,3 +54,28 @@
   color: var(--color-text-secondary);
   line-height: var(--line-height-tight);
 }
+
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-6xl) var(--container-padding);
+  border-top-left-radius: var(--radius-2xl);
+  border-top-right-radius: var(--radius-2xl);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+  color: #FFFFFF;
+}
+
+.cta-section p {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  margin-bottom: var(--spacing-xl);
+}

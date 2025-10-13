@@ -67,16 +67,15 @@ function Practitioners() {
             </Card>
           ))}
         </GridLayout>
-
-        {/* Call To Action Section */}
-        <div className="cta-section">
-          <h2>Begin Your Healing Journey</h2>
-          <p>Book a session with one of our experienced practitioners today.</p>
-          <Button href="/booking" variant="gradient">
-            Book an Appointment
-          </Button>
-        </div>
       </ContentSection>
+      {/* Call To Action Section */}
+      <div className="cta-section">
+        <h2>Begin Your Healing Journey</h2>
+        <p>Book a session with one of our experienced practitioners today.</p>
+        <Button href="/booking" variant="gradient">
+          Book an Appointment
+        </Button>
+      </div>
     </PageContainer>
   );
 }

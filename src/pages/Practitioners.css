@@ -85,7 +85,7 @@
   margin-bottom: var(--spacing-sm);
   background: var(--gradient-text);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   background-clip: text;
 }
 

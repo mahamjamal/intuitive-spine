@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import './Navigation.css'
+import Logo from './common/Logo'
 
 function Navigation() {
   const location = useLocation()
@@ -8,6 +9,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
+          <Logo size={40}/>
           <Link to="/">Intuitive Spine</Link>
         </div>
         <ul className="nav-links">

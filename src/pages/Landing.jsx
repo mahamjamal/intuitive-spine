@@ -7,37 +7,42 @@ import {
   Card,
   Button,
 } from "../components/common";
+import Logo from "../components/common/Logo";
 import "./Landing.css";
 
 function Landing() {
   const features = [
     {
       icon: "🌿",
-      title: "Holistic Approach",
-      text: "We focus on treating the whole person, not just symptoms.",
+      title: "Safe and non invasive",
+      text: "No cracking, popping, or discomfort.",
     },
     {
       icon: "✨",
-      title: "Experienced Practitioners",
-      text: "Our team of certified professionals are dedicated to your wellness.",
+      title: "Science-backed and holistic",
+      text: "Combines philosophy, anatomy, and energy healing.",
     },
     {
       icon: "🎯",
-      title: "Personalized Care",
-      text: "Each treatment plan is tailored to your unique needs.",
+      title: "Promotes real, lasting change",
+      text: "Many experience relief from pain, anxiety, fatigue, and more.",
     },
   ];
 
   return (
     <PageContainer className="landing-page">
       {/* Hero Section */}
+
       <HeroSection
         title="Welcome to Intuitive Spine"
-        subtitle="Experience the transformative power of Spinal Flow"
+        subtitle="Living in Spinal Flow"
       >
+        <Logo white size={300} className="hero-logo" />
         <p className="hero-description">
-          Discover a holistic approach to wellness that addresses the root cause
-          of discomfort, helping you achieve optimal health and vitality.
+          Are you feeling overwhelmed, stressed, or stuck in a cycle of tension
+          and fatigue? Imagine unlocking your body’s natural ability to heal,
+          grow, and thrive—effortlessly. That’s exactly what the Spinal Flow®
+          Technique offers.
         </p>
         <div className="hero-buttons">
           <Button to="/booking" variant="primary">

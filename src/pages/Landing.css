@@ -50,6 +50,7 @@
   font-size: var(--font-size-5xl);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-md);
+  color: #FFFFFF;
 }
 
 .cta-section p {
