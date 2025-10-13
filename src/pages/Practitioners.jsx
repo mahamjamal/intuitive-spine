@@ -26,9 +26,9 @@ function Practitioners() {
             </p>
           </div>
 
-          <div className="practitioners-grid fade-in">
+          <div className="practitioners-grid">
             {practitioners.map((practitioner) => (
-              <div key={practitioner.id} className="practitioner-card">
+              <div key={practitioner.id} className="practitioner-card fade-in">
                 <div className="practitioner-avatar">
                   {practitioner.image ? (
                     <img
