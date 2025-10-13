@@ -5,7 +5,7 @@ const practitioners = [
     title:
       "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
     image: "IMG_1110.jpeg",
-    bio: "Hi, I’m Max! I’m on a transformative journey in Spinal Flow, exploring how movement, energy, and awareness can release tension and restore balance. My sessions are designed to help you move freely, heal naturally, and live fully. I’m excited to share my passion with the Calgary community and guide clients toward feeling lighter, more aligned, and energized.",
+    bio: "Hi, I'm Max! I'm on a transformative journey in Spinal Flow, exploring how movement, energy, and awareness can release tension and restore balance. My sessions are designed to help you move freely, heal naturally, and live fully. I'm excited to share my passion with the Calgary community and guide clients toward feeling lighter, more aligned, and energized.",
     availability_notes:
       "Availability may vary weekly due to shift work. Generally available for daytime sessions on certain days and evening sessions on others.",
     availability: [
@@ -20,6 +20,8 @@ const practitioners = [
       { day: "Saturday", time: "Daytime or 7:00 pm – 9:00 pm" },
       { day: "Sunday", time: "Daytime or 7:00 pm – 9:00 pm" },
     ],
+    availableDates: ["2024-01-15", "2024-01-16", "2024-01-17", "2024-01-18"],
+    availableTimes: ["9:00 AM", "11:00 AM", "2:00 PM", "4:00 PM", "7:00 PM"],
   },
   {
     id: 2,
@@ -27,12 +29,14 @@ const practitioners = [
     title:
       "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
     image: "Marion pink 2.jpeg",
-    bio: "Marion is a Certified Spinal Flow Practitioner who trained under Dr. Carli Axford, founder of the Spinal Flow Technique®. Inspired by Dr. Carli’s research into the nervous system and the body’s innate healing intelligence, Marion felt a deep calling to this transformative work. Having personally experienced its life-changing impact, she is passionate about helping others experience lasting healing and reconnection with their body’s wisdom.",
+    bio: "Marion is a Certified Spinal Flow Practitioner who trained under Dr. Carli Axford, founder of the Spinal Flow Technique®. Inspired by Dr. Carli's research into the nervous system and the body's innate healing intelligence, Marion felt a deep calling to this transformative work. Having personally experienced its life-changing impact, she is passionate about helping others experience lasting healing and reconnection with their body's wisdom.",
     availability_notes: "Regular weekly schedule.",
     availability: [
       { day: "Tuesday", time: "2:00 pm – 5:00 pm" },
       { day: "Thursday", time: "11:30 am – 2:30 pm" },
     ],
+    availableDates: ["2024-01-16", "2024-01-18", "2024-01-23", "2024-01-25"],
+    availableTimes: ["2:00 PM", "3:00 PM", "4:00 PM", "11:30 AM", "12:30 PM"],
   },
   {
     id: 3,
@@ -50,20 +54,24 @@ const practitioners = [
       { day: "Saturday", time: "3:00 pm – 6:00 pm" },
       { day: "Sunday", time: "3:00 pm – 6:00 pm" },
     ],
+    availableDates: ["2024-01-15", "2024-01-17", "2024-01-19", "2024-01-20"],
+    availableTimes: ["1:00 PM", "2:00 PM", "4:00 PM", "5:00 PM", "6:00 PM"],
   },
   {
     id: 4,
     name: "Sister Amina",
     title: "Certified Spinal Flow Practitioner",
-    image: "/images/sister-amina.jpg", // Replace with actual image path if available
+    image: "/images/sister-amina.jpg",
     bio: `It was my own experience with Spinal Flow that inspired me to become a practitioner. After the
 death of my husband I became really stuck in depression and the inability to move forward. The
 first treatment brought massive emotional change that propelled me out of bed, had me walking
 straighter and taller and gave me my life back.
 It is my desire to shift the lives of many in this complex physical and emotional landscape. This
-gentle yet powerful modality is the perfect fit as it restores the body’s ability to heal itself. I look
+gentle yet powerful modality is the perfect fit as it restores the body's ability to heal itself. I look
 forward to making this happen for you!`,
     availability_notes: "Available for sessions on Tuesdays and Thursdays.",
+    availableDates: ["2024-01-16", "2024-01-18", "2024-01-23", "2024-01-25"],
+    availableTimes: ["10:00 AM", "12:00 PM", "2:00 PM", "4:00 PM"],
   },
 ];
 
