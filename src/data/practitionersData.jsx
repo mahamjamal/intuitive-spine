@@ -59,8 +59,9 @@ const practitioners = [
   },
   {
     id: 4,
-    name: "Sister Amina",
-    title: "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
+    name: "Margaret Kozikowski",
+    title:
+      "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
     image: null,
     bio: `It was my own experience with Spinal Flow that inspired me to become a practitioner. After the
 death of my husband I became really stuck in depression and the inability to move forward. The
@@ -70,8 +71,12 @@ It is my desire to shift the lives of many in this complex physical and emotiona
 gentle yet powerful modality is the perfect fit as it restores the body's ability to heal itself. I look
 forward to making this happen for you!`,
     availability_notes: "Available for sessions on Tuesdays and Thursdays.",
+    availability: [
+      { day: "Tuesday", time: "9:00 am – 12:00 pm" },
+      { day: "Thursday", time: "9:00 am – 11:30 am" },
+    ],
     availableDates: ["2024-01-16", "2024-01-18", "2024-01-23", "2024-01-25"],
-    availableTimes: ["10:00 AM", "12:00 PM", "2:00 PM", "4:00 PM"],
+    availableTimes: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "12:30 PM"],
   },
 ];
 
