@@ -4,7 +4,7 @@ const practitioners = [
     name: "Max",
     title:
       "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
-    image: "IMG_1110.jpeg",
+    image: null,
     bio: "Hi, I'm Max! I'm on a transformative journey in Spinal Flow, exploring how movement, energy, and awareness can release tension and restore balance. My sessions are designed to help you move freely, heal naturally, and live fully. I'm excited to share my passion with the Calgary community and guide clients toward feeling lighter, more aligned, and energized.",
     availability_notes:
       "Availability may vary weekly due to shift work. Generally available for daytime sessions on certain days and evening sessions on others.",
@@ -28,7 +28,7 @@ const practitioners = [
     name: "Marion Bosch",
     title:
       "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
-    image: "Marion pink 2.jpeg",
+    image: null,
     bio: "Marion is a Certified Spinal Flow Practitioner who trained under Dr. Carli Axford, founder of the Spinal Flow Technique®. Inspired by Dr. Carli's research into the nervous system and the body's innate healing intelligence, Marion felt a deep calling to this transformative work. Having personally experienced its life-changing impact, she is passionate about helping others experience lasting healing and reconnection with their body's wisdom.",
     availability_notes: "Regular weekly schedule.",
     availability: [
@@ -60,8 +60,8 @@ const practitioners = [
   {
     id: 4,
     name: "Sister Amina",
-    title: "Certified Spinal Flow Practitioner",
-    image: "/images/sister-amina.jpg",
+    title: "Certified Spinal Flow Practitioner | Member, Spinal Flow Technique Association",
+    image: null,
     bio: `It was my own experience with Spinal Flow that inspired me to become a practitioner. After the
 death of my husband I became really stuck in depression and the inability to move forward. The
 first treatment brought massive emotional change that propelled me out of bed, had me walking
