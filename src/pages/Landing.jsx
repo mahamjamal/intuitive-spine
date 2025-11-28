@@ -33,11 +33,8 @@ function Landing() {
     <PageContainer className="landing-page">
       {/* Hero Section */}
 
-      <HeroSection
-        title="Welcome to Intuitive Spine"
-        subtitle="Living in Spinal Flow"
-      >
-        <Logo white size={300} className="hero-logo" />
+      <HeroSection>
+        <Logo variant="white" size={850} className="hero-logo" />
         <p className="hero-description">
           Are you feeling overwhelmed, stressed, or stuck in a cycle of tension
           and fatigue? Imagine unlocking your body’s natural ability to heal,

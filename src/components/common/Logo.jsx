@@ -1,9 +1,21 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import whiteLogo from "../../assets/white-logo.png";
+import intuitiveSpine from "../../assets/intuitive-spine-txt.png";
 
-function Logo({ white = false, alt = "Intuitive Spine", size = 100, className = "" }) {
-  const src = white ? whiteLogo : logo;
+function Logo({
+  variant = "default", 
+  alt = "Intuitive Spine",
+  size = 100,
+  className = "",
+}) {
+
+  const src =
+    variant === "white"
+      ? whiteLogo
+      : variant === "spine"
+      ? intuitiveSpine
+      : logo;
 
   return (
     <img
