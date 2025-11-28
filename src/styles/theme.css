@@ -3,21 +3,23 @@
    ============================================ */
 
 :root {
-  /* Colors */
-  --color-primary: #0ea5e9;
-  --color-primary-dark: #0369a1;
-  --color-secondary: #f97316;
-  --color-text-primary: #1e1e1e;
-  --color-text-secondary: #475569;
-  --color-text-tertiary: #64748b;
-  --color-bg-primary: #f9fafb;
+  /* Colors - Warm palette inspired by sunset imagery */
+  --color-primary: #D4A574;
+  --color-primary-dark: #C68B4D;
+  --color-secondary: #C4A4A0;
+  --color-accent: #B5C9BC;
+  --color-accent-blue: #7BA3C9;
+  --color-text-primary: #3D3530;
+  --color-text-secondary: #5C544E;
+  --color-text-tertiary: #7A716A;
+  --color-bg-primary: #FAF6F1;
   --color-bg-secondary: #ffffff;
-  --color-bg-light: #f8fafc;
+  --color-bg-light: #F5F0E8;
   
-  /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #0ea5e9 0%, #0369a1 50%, #f97316 100%);
-  --gradient-text: linear-gradient(90deg, #0ea5e9, #f97316);
-  --gradient-button: linear-gradient(90deg, #0ea5e9, #f97316);
+  /* Gradients - Warm sunset-inspired */
+  --gradient-hero: linear-gradient(135deg, #D4A574 0%, #C68B4D 40%, #7BA3C9 100%);
+  --gradient-text: linear-gradient(90deg, #D4A574, #C68B4D);
+  --gradient-button: linear-gradient(90deg, #D4A574, #C4A4A0);
   
   /* Typography */
   --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
