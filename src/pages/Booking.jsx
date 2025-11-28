@@ -24,6 +24,8 @@ function Booking() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   // Get selected practitioner's available dates and times
   const selectedPractitioner = practitioners.find(
@@ -45,14 +47,42 @@ function Booking() {
         time: "",
       }));
     }
+
+    // Clear error when user starts typing
+    if (error) {
+      setError("");
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Booking submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/sendBookingEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          practitioner: selectedPractitioner?.name || "",
+        }),
+      });
+
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        throw new Error("Unable to process request. Please try again later.");
+      }
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit booking");
+      }
+
+      setSubmitted(true);
       setFormData({
         name: "",
         email: "",
@@ -62,7 +92,11 @@ function Booking() {
         time: "",
         message: "",
       });
-    }, 3000);
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -198,8 +232,19 @@ function Booking() {
                 ></textarea>
               </div>
 
-              <Button type="submit" variant="gradient" className="submit-button">
-                Submit Booking Request
+              {error && (
+                <div className="error-message">
+                  <p>{error}</p>
+                </div>
+              )}
+
+              <Button
+                type="submit"
+                variant="gradient"
+                className="submit-button"
+                disabled={isLoading}
+              >
+                {isLoading ? "Submitting..." : "Submit Booking Request"}
               </Button>
             </form>
           )}

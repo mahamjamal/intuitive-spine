@@ -10,7 +10,8 @@ function Button({
   onClick, 
   type = 'button',
   className = '',
-  size = 'medium'
+  size = 'medium',
+  disabled = false
 }) {
   const classes = `btn btn-${variant} btn-${size} ${className}`;
 
@@ -34,7 +35,7 @@ function Button({
 
   // If it's a button
   return (
-    <button type={type} onClick={onClick} className={classes}>
+    <button type={type} onClick={onClick} className={classes} disabled={disabled}>
       {children}
     </button>
   );
@@ -49,6 +50,7 @@ Button.propTypes = {
   type: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
+  disabled: PropTypes.bool,
 };
 
 export default Button;
