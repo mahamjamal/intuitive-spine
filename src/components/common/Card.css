@@ -11,6 +11,11 @@
   box-shadow: var(--shadow-xl);
 }
 
+/* Card with background image */
+.card-with-bg {
+  color: white;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .card {

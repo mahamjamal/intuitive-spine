@@ -10,22 +10,29 @@ import {
 import Logo from "../components/common/Logo";
 import "./Landing.css";
 
+import bgImage1 from "../assets/IMG_6135.jpg";
+import bgImage2 from "../assets/IMG_6137.jpg";
+import bgImage3 from "../assets/IMG_6138.jpg";
+
 function Landing() {
   const features = [
     {
       icon: "🌿",
       title: "Safe and non invasive",
       text: "No cracking, popping, or discomfort.",
+      backgroundImage: bgImage1,
     },
     {
       icon: "✨",
       title: "Science-backed and holistic",
       text: "Combines philosophy, anatomy, and energy healing.",
+      backgroundImage: bgImage2,
     },
     {
       icon: "🎯",
       title: "Promotes real, lasting change",
       text: "Many experience relief from pain, anxiety, fatigue, and more.",
+      backgroundImage: bgImage3,
     },
   ];
 
@@ -56,7 +63,7 @@ function Landing() {
         <SectionIntro title="Why Choose Intuitive Spine?" />
         <GridLayout columns={3} gap="medium">
           {features.map((item, index) => (
-            <Card key={index} className="feature-card">
+            <Card key={index} className="feature-card" backgroundImage={item.backgroundImage}>
               <div className="feature-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
