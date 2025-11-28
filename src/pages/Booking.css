@@ -83,6 +83,21 @@
   margin-bottom: var(--spacing-md);
 }
 
+/* Error Message */
+.error-message {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  color: #dc2626;
+  text-align: center;
+}
+
+.error-message p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .form-row {
