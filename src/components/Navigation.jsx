@@ -9,10 +9,10 @@ function Navigation() {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <Logo variant="logo" size={100} />
+     
           <Link to="/">
             {" "}
-            <Logo variant="spine" size={200} />{" "}
+               <Logo variant="logo" size={100} />{" "}
           </Link>
         </div>
         <ul className="nav-links">

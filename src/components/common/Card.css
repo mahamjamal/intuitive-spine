@@ -1,9 +1,14 @@
 .card {
   background: var(--color-bg-secondary);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-2xl) var(--spacing-xl);
+  padding: var(--spacing-3xl) var(--spacing-2xl); /* Increased padding */
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
+
+  /* Make cards bigger */
+  min-height: 320px;      /* Increase card height */
+  width: 100%;
+  max-width: 520px;       /* Increase card width (previously likely ~380-420) */
 }
 
 .card-hover:hover {
@@ -19,6 +24,8 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .card {
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    min-height: 280px;  /* Slightly smaller but still larger than original */
+    max-width: 100%;
   }
 }

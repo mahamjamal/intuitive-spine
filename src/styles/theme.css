@@ -8,7 +8,7 @@
   --color-primary-dark: #C68B4D;
   --color-secondary: #C4A4A0;
   --color-accent: #B5C9BC;
-  --color-accent-blue: #7BA3C9;
+  --color-accent-blue: #e0a386;
   --color-text-primary: #3D3530;
   --color-text-secondary: #5C544E;
   --color-text-tertiary: #7A716A;
@@ -17,7 +17,7 @@
   --color-bg-light: #F5F0E8;
   
   /* Gradients - Warm sunset-inspired */
-  --gradient-hero: linear-gradient(135deg, #D4A574 0%, #C68B4D 40%, #7BA3C9 100%);
+  --gradient-hero: linear-gradient(135deg, #dcc0a1 0%, #f7dec4 40%, #efbda5 100%);
   --gradient-text: linear-gradient(90deg, #D4A574, #C68B4D);
   --gradient-button: linear-gradient(90deg, #D4A574, #C4A4A0);
   

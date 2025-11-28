@@ -10,26 +10,26 @@ import {
 import Logo from "../components/common/Logo";
 import "./Landing.css";
 
-import bgImage1 from "../assets/IMG_6135.jpg";
-import bgImage2 from "../assets/IMG_6137.jpg";
+import bgImage1 from "../assets/IMG_6141.jpg";
+import bgImage2 from "../assets/IMG_6139.jpg";
 import bgImage3 from "../assets/IMG_6138.jpg";
 
 function Landing() {
   const features = [
     {
-      icon: "🌿",
+      icon: "",
       title: "Safe and non invasive",
       text: "No cracking, popping, or discomfort.",
       backgroundImage: bgImage1,
     },
     {
-      icon: "✨",
+      icon: "",
       title: "Science-backed and holistic",
       text: "Combines philosophy, anatomy, and energy healing.",
       backgroundImage: bgImage2,
     },
     {
-      icon: "🎯",
+      icon: "",
       title: "Promotes real, lasting change",
       text: "Many experience relief from pain, anxiety, fatigue, and more.",
       backgroundImage: bgImage3,
@@ -40,7 +40,7 @@ function Landing() {
     <PageContainer className="landing-page">
       {/* Hero Section */}
 
-      <HeroSection>
+      <HeroSection className="hero-with-bg">
         <Logo variant="white" size={850} className="hero-logo" />
         <p className="hero-description">
           Are you feeling overwhelmed, stressed, or stuck in a cycle of tension
@@ -48,6 +48,7 @@ function Landing() {
           grow, and thrive—effortlessly. That’s exactly what the Spinal Flow®
           Technique offers.
         </p>
+
         <div className="hero-buttons">
           <Button to="/booking" variant="primary">
             Book an Appointment
@@ -63,7 +64,11 @@ function Landing() {
         <SectionIntro title="Why Choose Intuitive Spine?" />
         <GridLayout columns={3} gap="medium">
           {features.map((item, index) => (
-            <Card key={index} className="feature-card" backgroundImage={item.backgroundImage}>
+            <Card
+              key={index}
+              className="feature-card"
+              backgroundImage={item.backgroundImage}
+            >
               <div className="feature-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>

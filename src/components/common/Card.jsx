@@ -3,7 +3,7 @@ import './Card.css';
 
 function Card({ children, className = '', hover = true, backgroundImage = null }) {
   const style = backgroundImage ? {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
+    backgroundImage: `linear-gradient(rgba(145, 116, 87, 0.4), rgba(248, 201, 157, 0.59)), url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   } : {};
