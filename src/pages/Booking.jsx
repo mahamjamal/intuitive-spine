@@ -10,6 +10,8 @@ import {
 import practitioners from "../data/practitionersData";
 import "./Booking.css";
 
+import heroBgImage from "../assets/IMG_6135.jpg";
+
 function Booking() {
   const [formData, setFormData] = useState({
     name: "",
@@ -69,6 +71,7 @@ function Booking() {
       <HeroSection
         title="Book Your Appointment"
         subtitle="Take the first step towards wellness"
+        backgroundImage={heroBgImage}
       />
 
       {/* Main Content */}

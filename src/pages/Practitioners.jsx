@@ -10,6 +10,8 @@ import {
 import practitioners from "../data/practitionersData";
 import "./Practitioners.css";
 
+import heroBgImage from "../assets/IMG_6138.jpg";
+
 function Practitioners() {
   return (
     <PageContainer className="practitioners-page">
@@ -17,6 +19,7 @@ function Practitioners() {
       <HeroSection
         title="Our Practitioners"
         subtitle="Meet the dedicated healers behind Intuitive Spine"
+        backgroundImage={heroBgImage}
       />
 
       {/* Content Section */}

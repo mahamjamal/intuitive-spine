@@ -8,6 +8,8 @@ import {
 } from "../components/common";
 import "./About.css";
 
+import heroBgImage from "../assets/IMG_6137.jpg";
+
 function About() {
   const values = [
     {
@@ -38,6 +40,7 @@ function About() {
       <HeroSection
         title="About Intuitive Spine"
         subtitle="Your journey to wellness starts here"
+        backgroundImage={heroBgImage}
       />
 
       {/* Content Section */}
