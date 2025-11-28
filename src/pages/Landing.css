@@ -26,13 +26,18 @@
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-sm);
-  color: var(--color-primary);
+  color: white;
 }
 
 .landing-page .feature-card p {
-  color: var(--color-text-tertiary);
+  color: white;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-tight);
+}
+
+.landing-page .feature-card {
+  min-width: 300px;
+  min-height: 200px;
 }
 
 /* CTA Section */
