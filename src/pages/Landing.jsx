@@ -40,7 +40,7 @@ function Landing() {
     <PageContainer className="landing-page">
       {/* Hero Section */}
 
-      <HeroSection className="hero-with-bg">
+      <HeroSection backgroundImage={bgImage1}>
         <Logo variant="white" size={850} className="hero-logo" />
         <p className="hero-description">
           Are you feeling overwhelmed, stressed, or stuck in a cycle of tension

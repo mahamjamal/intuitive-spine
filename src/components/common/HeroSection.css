@@ -1,7 +1,5 @@
 .hero-section {
-  /* background: var(--gradient-hero); */
-  background-image: url("../assets/IMG_6141.jpg"); /* change to any IMG* file */
-  background-size: cover;
+  background: var(--gradient-hero);
   color: white;
   text-align: center;
   padding: 8rem 1rem 6rem;
@@ -10,7 +8,6 @@
   box-shadow: var(--shadow-lg);
 }
 .hero-with-bg {
-
   background-position: center;
   background-repeat: no-repeat;
 
