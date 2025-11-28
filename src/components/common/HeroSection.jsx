@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './HeroSection.css';
 
 function HeroSection({ title, subtitle, children, className = '', backgroundImage = null }) {
+  // Preload the background image for faster rendering
+  useEffect(() => {
+    if (backgroundImage) {
+      const img = new Image();
+      img.src = backgroundImage;
+    }
+  }, [backgroundImage]);
+
   const style = backgroundImage ? {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',

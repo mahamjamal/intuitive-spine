@@ -19,9 +19,15 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* adjust darkness */
-  backdrop-filter: blur(2px); /* optional high-end effect */
+  background: linear-gradient(
+    135deg,
+    rgba(145, 116, 87, 0.65) 0%,
+    rgba(248, 201, 157, 0.55) 50%,
+    rgba(145, 116, 87, 0.65) 100%
+  );
   z-index: 0;
+  border-bottom-left-radius: var(--radius-2xl);
+  border-bottom-right-radius: var(--radius-2xl);
 }
 
 .hero-with-bg > * {
