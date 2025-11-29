@@ -4,12 +4,11 @@ import whiteLogo from "../../assets/white-logo.png";
 import intuitiveSpine from "../../assets/intuitive-spine-txt.png";
 
 function Logo({
-  variant = "default", 
+  variant = "default",
   alt = "Intuitive Spine",
   size = 100,
   className = "",
 }) {
-
   const src =
     variant === "white"
       ? whiteLogo
