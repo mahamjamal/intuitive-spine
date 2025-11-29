@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../assets/logo.png";
 import whiteLogo from "../../assets/white-logo.png";
 import intuitiveSpine from "../../assets/intuitive-spine-txt.png";
@@ -20,9 +19,10 @@ function Logo({
     <img
       src={src}
       alt={alt}
-      className={className}
+      className={`responsive-logo ${className}`}
       style={{
-        width: `${size}px`,
+        width: `min(${size}px, 90vw)`,
+        maxWidth: "100%",
         height: "auto",
         display: "block",
         margin: "0 auto",

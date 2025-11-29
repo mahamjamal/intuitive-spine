@@ -18,9 +18,23 @@
   max-width: var(--container-max-width);
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - Large tablets */
+@media (max-width: 1024px) {
+  .content-section {
+    padding: var(--spacing-4xl) var(--spacing-lg);
+  }
+}
+
+/* Responsive adjustments - Tablets */
 @media (max-width: 768px) {
   .content-section {
-    padding: var(--spacing-4xl) var(--spacing-md);
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+}
+
+/* Responsive adjustments - Mobile */
+@media (max-width: 480px) {
+  .content-section {
+    padding: var(--spacing-2xl) var(--spacing-sm);
   }
 }
