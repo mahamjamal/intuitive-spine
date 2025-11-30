@@ -1,14 +1,12 @@
 .card {
   background: var(--color-bg-secondary);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-3xl) var(--spacing-2xl); /* Increased padding */
+  padding: var(--spacing-3xl) var(--spacing-2xl);
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
-
-  /* Make cards bigger */
-  min-height: 320px;      /* Increase card height */
+  min-height: 320px;
   width: 100%;
-  max-width: 520px;       /* Increase card width (previously likely ~380-420) */
+  max-width: 520px;
 }
 
 .card-hover:hover {
@@ -21,11 +19,33 @@
   color: white;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - Large tablets */
+@media (max-width: 1024px) {
+  .card {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    min-height: 300px;
+    max-width: 480px;
+  }
+}
+
+/* Responsive adjustments - Tablets */
 @media (max-width: 768px) {
   .card {
     padding: var(--spacing-xl) var(--spacing-lg);
-    min-height: 280px;  /* Slightly smaller but still larger than original */
+    min-height: 280px;
     max-width: 100%;
+  }
+}
+
+/* Responsive adjustments - Mobile */
+@media (max-width: 480px) {
+  .card {
+    padding: var(--spacing-lg) var(--spacing-md);
+    min-height: 240px;
+    border-radius: var(--radius-md);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-3px);
   }
 }
