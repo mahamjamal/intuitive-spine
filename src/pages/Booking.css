@@ -1,5 +1,26 @@
 /* Booking Page Specific Styles */
 
+/* Mobile Form Button - Hidden on desktop, shown on mobile */
+.mobile-form-button {
+  display: none;
+  text-align: center;
+}
+
+.mobile-form-button .form-link-btn {
+  margin-top: var(--spacing-xl);
+}
+
+/* Desktop Form - Shown on desktop, hidden on mobile */
+.desktop-form {
+  display: block;
+  max-width: 100%;
+}
+
+.desktop-form iframe {
+  border: none;
+  max-width: 100%;
+}
+
 /* Form Container */
 .booking-form-container {
   max-width: 700px;
@@ -98,9 +119,25 @@
   font-size: var(--font-size-sm);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments - Tablet */
 @media (max-width: 768px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  /* Show button, hide iframe on mobile */
+  .mobile-form-button {
+    display: block;
+  }
+
+  .desktop-form {
+    display: none;
+  }
+}
+
+/* Responsive Adjustments - Mobile */
+@media (max-width: 480px) {
+  .mobile-form-button .form-link-btn {
+    width: 100%;
   }
 }
